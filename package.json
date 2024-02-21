@@ -1,0 +1,33 @@
+{
+  "name": "vibe",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build Better Habits, Build a Better Life",
+  "keywords": [
+    "react",
+    "typescript",
+    "journal",
+    "nextjs",
+    "psychology",
+    "gamification",
+    "habits",
+    "mental-health",
+    "behaviours",
+    "habit-tracker",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "author": "Yaroslav Usenko <yar.usenko.inc@gmail.com> (https://www.yarus.app/)",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.4.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
