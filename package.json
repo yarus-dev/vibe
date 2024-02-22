@@ -19,9 +19,6 @@
   "license": "MIT",
   "author": "Yaroslav Usenko <yar.usenko.inc@gmail.com> (https://www.yarus.app/)",
   "type": "module",
-  "scripts": {
-    "dev": "turbo run dev --parallel"
-  },
   "engines": {
     "node": ">=18"
   },
@@ -29,5 +26,17 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "clean": "turbo clean && rm -rf node_modules && rm -rf .turbo",
+    "dev": "turbo dev --parallel",
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{js,jsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4"
+  }
 }

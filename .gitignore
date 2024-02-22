@@ -1,3 +1,7 @@
+# Generate output
+.build
+.turbo
+
 # Logs
 logs
 *.log
