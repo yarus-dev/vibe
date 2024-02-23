@@ -1,12 +1,15 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-const Links = [{
-  to: "/",
-  label: "Journal",
-}, {
-  to: "/login",
-  label: "Login",
-}];
+const Links = [
+  {
+    to: "/",
+    label: "Journal",
+  },
+  {
+    to: "/login",
+    label: "Login",
+  },
+];
 
 export function Layout() {
   return (
@@ -14,13 +17,13 @@ export function Layout() {
       <nav>
         <ul>
           {Links.map(({ to, label }) => (
-                      <li key={`${to}-${label}`}>
-                      <Link to={to}>{label}</Link>
-                    </li>
+            <li key={`${to}-${label}`}>
+              <Link to={to}>{label}</Link>
+            </li>
           ))}
         </ul>
       </nav>
       <Outlet />
     </div>
-  )
+  );
 }
