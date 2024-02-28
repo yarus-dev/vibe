@@ -9,7 +9,7 @@
       "path": "../packages/design-system/src",
     },
     {
-      "name": "app",
+      "name": "web",
       "path": "../apps/web/src",
     },
     {

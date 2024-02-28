@@ -9,7 +9,7 @@
     "build": "vite build",
     "start": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .js,.jsx --fix source"
+    "lint": "eslint . --ext .js,.jsx --fix src"
   },
   "dependencies": {
     "clsx": "^2.1.0",

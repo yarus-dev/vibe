@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  html, body, .%VITE_ROOT_ID% {
+  html, body, #🪄 {
     @apply relative;
     @apply size-full;
     @apply min-h-screen;
