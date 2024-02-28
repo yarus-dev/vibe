@@ -1,0 +1,11 @@
+{
+  "name": "@pkg/config",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "eslint/library.js",
+    "eslint/react.js",
+    "eslint/storybook.js"
+  ],
+  "devDependencies": {}
+}

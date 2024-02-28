@@ -1,5 +1,5 @@
-import { NotFound } from "@/partials/NotFound";
 import { useRouteError } from "react-router-dom";
+import { NotFound } from "@/partials/NotFound";
 
 function Center({ children }) {
   return (

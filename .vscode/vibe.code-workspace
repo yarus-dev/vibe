@@ -1,0 +1,28 @@
+{
+  "folders": [
+    {
+      "name": "api",
+      "path": "../apps/api/src",
+    },
+    {
+      "name": "design-system",
+      "path": "../packages/design-system/src",
+    },
+    {
+      "name": "app",
+      "path": "../apps/web/src",
+    },
+    {
+      "name": "admin",
+      "path": "../apps/admin/src",
+    },
+    {
+      "name": "website",
+      "path": "../apps/website/src",
+    },
+    {
+      "name": "vibe",
+      "path": "../",
+    },
+  ],
+}

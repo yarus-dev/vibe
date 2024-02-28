@@ -1,7 +1,0 @@
-{
-  "name": "@pkg/core",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {},
-  "type": "module"
-}

@@ -1,10 +1,11 @@
-import { ErrorPage } from "@/pages/Error";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { JournalPage } from "@/pages/Journal";
 // import { LoadingPage } from "@/pages/Loading";
 import { LoginPage } from "@/pages/Login";
 import { SettingsPage } from "@/pages/Settings";
+import { Layout } from "@/partials/Layout";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 const router = createBrowserRouter(
   import.meta.env.PROD
     ? [
@@ -16,26 +17,15 @@ const router = createBrowserRouter(
       ]
     : [
         {
-          id: "root",
-          path: "/",
+          Component: Layout,
           children: [
-            {
-              index: true,
-              Component: JournalPage,
-            },
-            {
-              path: "/profile",
-              Component: SettingsPage,
-            },
-            {
-              path: "/login",
-              Component: LoginPage,
-            },
-            {
-              path: "*",
-              element: <ErrorPage />,
-            },
+            { index: true, element: <JournalPage /> },
+            { path: "/profile", element: <SettingsPage /> },
           ],
+        },
+        {
+          path: "/login",
+          element: <LoginPage />,
         },
       ],
 );

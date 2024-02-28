@@ -1,7 +1,7 @@
+import { Link } from "react-router-dom";
 import { Apple, Google } from "@/assets/Icons";
 import { Button } from "@/components/Button";
 import { Footer } from "@/partials/Footer";
-import { Link } from "react-router-dom";
 
 export function LoginPage() {
   return (

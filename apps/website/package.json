@@ -1,0 +1,14 @@
+{
+  "name": "@app/website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf .build && rm -rf node_modules && rm -rf .turbo",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "next lint"
+  }
+}

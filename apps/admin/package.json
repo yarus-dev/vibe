@@ -1,0 +1,14 @@
+{
+  "name": "@app/admin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf .build && rm -rf node_modules && rm -rf .turbo",
+    "dev": "vite --port 8081",
+    "build": "vite build",
+    "start": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx --fix source"
+  }
+}

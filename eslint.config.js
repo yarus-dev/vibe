@@ -1,8 +1,8 @@
-module.exports ={
+export default {
   root: true,
   ignorePatterns: ["apps/**", "packages/**"],
-  extends: ["@pkg/config/library.js"],
+  extends: ["@pkg/config/eslint/base"],
   parserOptions: {
     project: true,
   },
-}
+};

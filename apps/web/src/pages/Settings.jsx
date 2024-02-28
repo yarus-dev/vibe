@@ -1,8 +1,8 @@
+import {clsx} from 'clsx';
 import { Input } from '@/components/Input';
 import { Button } from '@/components/Button';
 import GoogleIcon  from '@/assets/icons/google.svg';
 import AppleIcon  from '@/assets/icons/apple.svg';
-import {clsx} from 'clsx';
 
 const AccountsIcons = {
   google: GoogleIcon,
@@ -37,14 +37,14 @@ function Account ({ account, isLinked }) {
       <dl className='flex gap-2  items-center'>
         <img
           src={AccountsIcons[account]}
-          alt={Title + ' icon'}
+          alt={`${Title  } icon`}
           className='size-6'
         />
-        {Title + ' is ' + (isLinked ? 'linked' : 'not linked')}
+        {`${Title  } is ${  isLinked ? 'linked' : 'not linked'}`}
       </dl>
       <dt>
         <a
-          title={(isLinked ? 'Unlink' : 'Link') + ' your ' + Title + ' account'}
+          title={`${isLinked ? 'Unlink' : 'Link'  } your ${  Title  } account`}
           href="#"
           className={clsx(
             'text-blue-600',

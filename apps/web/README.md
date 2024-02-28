@@ -1,7 +1,6 @@
 ## Folder structure
 
-
-`assets`  contains assets like styles, fonts and other staff.
+`assets` contains assets like styles, fonts and other staff.
 `pages` contains the pages that make up the template.
 `partials` includes partial components such as the header, footer, page sections, and more.
 `utils` contains utility functions.

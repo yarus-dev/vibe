@@ -9,11 +9,15 @@ const Links = [
     to: "/login",
     label: "Login",
   },
+  {
+    to: "/profile",
+    label: "profile",
+  },
 ];
 
 export function Layout() {
   return (
-    <div>
+    <div className="size-full flex flex-row">
       <nav>
         <ul>
           {Links.map(({ to, label }) => (
