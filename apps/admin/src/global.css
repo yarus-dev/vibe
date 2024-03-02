@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #🪄 {
+    @apply relative;
+    @apply size-full;
+    @apply min-h-screen;
+  }
+
+  body {
+    @apply bg-white;
+    @apply text-gray-950;
+    @apply font-sans;
+  }
+}
