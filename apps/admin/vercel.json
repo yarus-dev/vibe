@@ -1,4 +1,10 @@
 {
+  "version": 2,
+  "name": "vibe-admin",
+  "buildCommand": "cd ../.. && npm run build --workspace=@app/admin",
+  "outputDirectory": ".build",
+  "devCommand": "cd ../.. && npm run dev --workspace=@app/admin",
+  "trailingSlash": false,
   "rewrites": [
     {
       "source": "/(.*)",

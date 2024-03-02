@@ -1,1 +1,8 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
+{
+  "name": "vibe-api",
+  "version": 2,
+  "buildCommand": "next build",
+  "outputDirectory": ".build",
+  "devCommand": "next dev",
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }]
+}
