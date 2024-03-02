@@ -1,12 +1,6 @@
-import { clsx } from 'clsx';
+import { clsx } from "clsx";
 
-
-export function Button({
-  className,
-  color = "dark",
-  children,
-  ...props
-}) {
+export function Button({ className, color = "dark", children, ...props }) {
   return (
     <div
       type="button"
@@ -14,8 +8,8 @@ export function Button({
         "relative",
         "isolate",
         "inline-flex",
-        'items-center',
-        'justify-center',
+        "items-center",
+        "justify-center",
         "align-baseline",
         "gap-x-2",
 
@@ -24,7 +18,7 @@ export function Button({
 
         "text-base/6",
         "font-extrabold",
-        'leading-none',
+        "leading-none",
         "text-center",
         "uppercase",
         "tracking-wide",
@@ -46,16 +40,11 @@ export function Button({
         "ring-gray-300",
         "hover:bg-gray-100",
         "active:bg-gray-200",
-        className
+        className,
       )}
-
-
-
-
       {...props}
     >
-    {children}
-  </div>
-  )
+      {children}
+    </div>
+  );
 }
-
