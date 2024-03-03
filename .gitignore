@@ -1,6 +1,7 @@
 # Generate output
 .build
 .turbo
+.vercel
 
 # Logs
 logs
