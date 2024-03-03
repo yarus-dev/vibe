@@ -5,10 +5,18 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf .build && rm -rf node_modules && rm -rf .turbo",
-    "dev": "echo \"Error: no dev specified\" && exit 1",
-    "build": "echo \"Error: no build specified\" && exit 1",
-    "start": "echo \"Error: no start specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "build": "esbuild src/server.js --bundle --platform=node --format=esm --outdir=.build --outbase=src",
+    "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js,.jsx --fix source"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.20.1",
+    "nodemon": "^3.1.0"
   }
 }
