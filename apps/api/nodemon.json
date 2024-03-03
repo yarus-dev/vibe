@@ -1,7 +1,0 @@
-{
-  "watch": ["src"],
-  "ignore": ["node_modules"],
-  "ext": "js,mjs,json,graphql",
-  "exec": "rm -rf .build && node ./scripts/build.js && node ./.build/api/graphql.js",
-  "legacyWatch": true
-}
