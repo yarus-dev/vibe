@@ -6,10 +6,10 @@
   "source": "src/api/graphql.js",
   "main": "api/graphql.js",
   "scripts": {
-    "clean": "rm -rf api && rm -rf node_modules && rm -rf .turbo",
+    "clean": "rm -rf .build .turbo node_modules",
     "dev": "nodemon",
     "build": "node scripts/build",
-    "start": "node api/graphql",
+    "start": "node .build/api/graphql",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js,.jsx --fix source"
   },

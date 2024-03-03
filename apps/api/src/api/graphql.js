@@ -9,6 +9,8 @@ const server = new ApolloServer({
   resolvers,
 });
 
+
+
 const standalone = await startStandaloneServer(server);
 
 export default standalone;

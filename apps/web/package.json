@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf .build && rm -rf node_modules && rm -rf .turbo",
+    "clean": "rm -rf .build .turbo node_modules",
     "dev": "vite --port 8080",
     "build": "vite build",
     "start": "vite preview",

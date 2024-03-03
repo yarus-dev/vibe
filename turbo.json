@@ -4,6 +4,7 @@
   "globalEnv": ["BASE_URL"],
   "pipeline": {
     "clean": {
+      "dependsOn": ["^clean"],
       "cache": false
     },
     "dev": {

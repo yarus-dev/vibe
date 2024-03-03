@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf .build && rm -rf node_modules && rm -rf .turbo",
-    "dev": "next dev",
+    "clean": "rm -rf .build .turbo node_modules",
+    "dev":  "next dev",
     "build": "next build",
     "start": "next start",
     "test": "echo \"Error: no test specified\" && exit 1",
