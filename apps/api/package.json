@@ -3,20 +3,25 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "source": "src/api/graphql.js",
+  "main": "api/graphql.js",
   "scripts": {
-    "clean": "rm -rf .build && rm -rf node_modules && rm -rf .turbo",
-    "dev": "nodemon src/server.js",
-    "build": "esbuild src/server.js --bundle --platform=node --format=esm --outdir=.build --outbase=src",
-    "start": "node src/server.js",
+    "clean": "rm -rf api && rm -rf node_modules && rm -rf .turbo",
+    "dev": "nodemon",
+    "build": "node scripts/build",
+    "start": "node api/graphql",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js,.jsx --fix source"
   },
   "dependencies": {
-    "@apollo/server": "^4.10.0",
-    "graphql": "^16.8.1"
+    "@apollo/server": "^4.10.0"
   },
   "devDependencies": {
-    "esbuild": "0.20.1",
+    "@graphql-tools/optimize": "^2.0.0",
+    "@luckycatfactory/esbuild-graphql-loader": "^3.8.1",
+    "esbuild": "^0.20.1",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
     "nodemon": "^3.1.0"
   }
 }
