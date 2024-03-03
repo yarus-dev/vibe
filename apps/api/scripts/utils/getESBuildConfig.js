@@ -26,7 +26,7 @@ export const DEFAULT_CONFIG = {
   splitting: true,
   packages: 'external',
   outbase: 'src',
-  outdir: '.build',
+  outdir: '.',
   sourcemap: 'inline',
   treeShaking: true,
   allowOverwrite: true,

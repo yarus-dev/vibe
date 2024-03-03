@@ -4,7 +4,6 @@
   "version": "1.0.0",
   "type": "module",
   "source": "src/api/graphql.js",
-  "main": "api/graphql.js",
   "scripts": {
     "clean": "rm -rf .build .turbo node_modules",
     "dev": "nodemon",

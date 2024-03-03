@@ -1,5 +1,9 @@
 {
   "version": 2,
-  "builds": [{ "src": ".build/api/grqphql.js", "use": "@now/node" }],
-  "routes": [{ "src": "(.*)", "dest": ".build/api/grqphql.js" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/graphql"
+    }
+  ]
 }
