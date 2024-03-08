@@ -1,10 +1,6 @@
 {
   "folders": [
     {
-      "name": "api",
-      "path": "../apps/api/src",
-    },
-    {
       "name": "design-system",
       "path": "../packages/design-system/src",
     },
